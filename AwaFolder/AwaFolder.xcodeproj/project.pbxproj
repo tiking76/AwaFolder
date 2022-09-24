@@ -11,6 +11,8 @@
 		E2E3375028DE904000C09E7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3374F28DE904000C09E7C /* ContentView.swift */; };
 		E2E3375228DE904100C09E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E3375128DE904100C09E7C /* Assets.xcassets */; };
 		E2E3375528DE904100C09E7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E3375428DE904100C09E7C /* Preview Assets.xcassets */; };
+		E2E3375C28DE948100C09E7C /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = E2E3375B28DE948100C09E7C /* Extensions */; };
+		E2E3375E28DE948C00C09E7C /* Utilities in Resources */ = {isa = PBXBuildFile; fileRef = E2E3375D28DE948C00C09E7C /* Utilities */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E2E3374F28DE904000C09E7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E2E3375128DE904100C09E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2E3375428DE904100C09E7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E2E3375B28DE948100C09E7C /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
+		E2E3375D28DE948C00C09E7C /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utilities; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		E2E3374C28DE904000C09E7C /* AwaFolder */ = {
 			isa = PBXGroup;
 			children = (
+				E2E3375D28DE948C00C09E7C /* Utilities */,
+				E2E3375B28DE948100C09E7C /* Extensions */,
 				E2E3374D28DE904000C09E7C /* AwaFolderApp.swift */,
 				E2E3374F28DE904000C09E7C /* ContentView.swift */,
 				E2E3375128DE904100C09E7C /* Assets.xcassets */,
@@ -125,6 +131,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E3375C28DE948100C09E7C /* Extensions in Resources */,
+				E2E3375E28DE948C00C09E7C /* Utilities in Resources */,
 				E2E3375528DE904100C09E7C /* Preview Assets.xcassets in Resources */,
 				E2E3375228DE904100C09E7C /* Assets.xcassets in Resources */,
 			);
