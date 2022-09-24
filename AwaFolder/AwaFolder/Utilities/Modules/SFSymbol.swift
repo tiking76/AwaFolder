@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum SFSymbol: String {
+enum SFSymbol: String, AllCases {
     
     /// 􀓣
     case profile = "person.circle"
