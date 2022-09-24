@@ -1,41 +1,59 @@
+//
+//  Font.swift
+//  AwaFolder
+//
+//  Created by tiking on 2022/09/24.
+//
+
 import SwiftUI
 
-extension Font {
+enum SFSymbol: String, CaseIterable, Identifiable {
     
-    /// 24px, Bold
-    static let h1 = Font.system(size: 24, weight: .semibold)
+    /// 􀓣
+    case profile = "person.circle"
     
-    /// 24px,
-    static let serchText = Font.system(size: 24, weight: .regular)
+    /// 􀆄
+    case xmark = "xmark"
     
-    /// 22px, Bold
-    static let h2 = Font.system(size: 22, weight: .semibold)
+    /// 􀊴
+    case heart = "heart"
     
-    /// 18px, Bold
-    static let h3 = Font.system(size: 18, weight: .semibold)
+    /// 􀊵
+    case heartFill = "heart.fill"
     
-    /// 16px, Bold
-    static let h4 = Font.system(size: 16, weight: .semibold)
+    /// 􀊫
+    case search = "magnifyingglass"
     
-    /// 16px
-    static let body = Font.system(size: 16)
+    /// 􀎞
+    case house
     
-    /// 15px
-    static let subtitle = Font.system(size: 15)
+    /// 􀈎
+    case edit = "square.and.pencil"
     
-    /// 14px
-    static let body2 = Font.system(size: 14)
+    /// 􀣋
+    case gear = "gearshape"
+    /// ＋
+    case plus = "plus"
     
-    /// 13px
-    static let subtitle2 = Font.system(size: 13)
+    /// 􀈟
+    case paperplane = "paperplane"
     
-    /// 12px
-    static let caption = Font.system(size: 12)
+    case bookmark = "bookmark"
     
-    /// 10px
-    static let caption2 = Font.system(size: 10)
+    case bookmarkFill = "bookmark.fill"
+
+    /// 􀈑
+    case trash = "trash"
     
-    // 15px, Bold
-    static let button = Font.system(size: 15, weight: .semibold)
+    /// 􀈊
+    case pencil = "pencil"
+    
+    var id: String { rawValue }
+    
 }
 
+extension Image {
+    init(symbol: SFSymbol) {
+        self.init(systemName: symbol.rawValue)
+    }
+}

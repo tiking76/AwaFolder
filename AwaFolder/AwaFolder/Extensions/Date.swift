@@ -1,3 +1,10 @@
+//
+//  Data.swift
+//  AwaFolder
+//
+//  Created by tiking on 2022/09/24.
+//
+
 import Foundation
 
 fileprivate var formatter: DateFormatter {
@@ -19,3 +26,4 @@ extension Date {
         self = date
     }
 }
+

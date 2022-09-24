@@ -1,3 +1,10 @@
+//
+//  Color.swift
+//  AwaFolder
+//
+//  Created by tiking on 2022/09/24.
+//
+
 import SwiftUI
 
 extension UIColor {
@@ -19,3 +26,4 @@ extension Color {
     static let nonLogin = Color(UIColor.nonLogin)
     static let text = Color(UIColor.text)
 }
+

@@ -1,3 +1,10 @@
+//
+//  Data+Image.swift
+//  AwaFolder
+//
+//  Created by tiking on 2022/09/24.
+//
+
 import Foundation
 import UIKit
 
