@@ -1,6 +1,6 @@
 //
-//  PhotoConectApp.swift
-//  PhotoConect
+//  AwaFolderApp.swift
+//  AwaFolder
 //
 //  Created by tiking on 2022/09/24.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct PhotoConectApp: App {
+struct AwaFolderApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

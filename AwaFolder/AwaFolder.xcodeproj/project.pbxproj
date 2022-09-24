@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E2A4129428DE8A6700A6D2E3 /* PhotoConectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4129328DE8A6700A6D2E3 /* PhotoConectApp.swift */; };
-		E2A4129628DE8A6700A6D2E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4129528DE8A6700A6D2E3 /* ContentView.swift */; };
-		E2A4129828DE8A6800A6D2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A4129728DE8A6800A6D2E3 /* Assets.xcassets */; };
-		E2A4129B28DE8A6800A6D2E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A4129A28DE8A6800A6D2E3 /* Preview Assets.xcassets */; };
+		E2E3374E28DE904000C09E7C /* AwaFolderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3374D28DE904000C09E7C /* AwaFolderApp.swift */; };
+		E2E3375028DE904000C09E7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3374F28DE904000C09E7C /* ContentView.swift */; };
+		E2E3375228DE904100C09E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E3375128DE904100C09E7C /* Assets.xcassets */; };
+		E2E3375528DE904100C09E7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E3375428DE904100C09E7C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E2A4129028DE8A6700A6D2E3 /* PhotoConect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoConect.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2A4129328DE8A6700A6D2E3 /* PhotoConectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoConectApp.swift; sourceTree = "<group>"; };
-		E2A4129528DE8A6700A6D2E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E2A4129728DE8A6800A6D2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E2A4129A28DE8A6800A6D2E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E2E3374A28DE904000C09E7C /* AwaFolder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwaFolder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E3374D28DE904000C09E7C /* AwaFolderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwaFolderApp.swift; sourceTree = "<group>"; };
+		E2E3374F28DE904000C09E7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E2E3375128DE904100C09E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2E3375428DE904100C09E7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E2A4128D28DE8A6700A6D2E3 /* Frameworks */ = {
+		E2E3374728DE904000C09E7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E2A4128728DE8A6700A6D2E3 = {
+		E2E3374128DE904000C09E7C = {
 			isa = PBXGroup;
 			children = (
-				E2A4129228DE8A6700A6D2E3 /* PhotoConect */,
-				E2A4129128DE8A6700A6D2E3 /* Products */,
+				E2E3374C28DE904000C09E7C /* AwaFolder */,
+				E2E3374B28DE904000C09E7C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E2A4129128DE8A6700A6D2E3 /* Products */ = {
+		E2E3374B28DE904000C09E7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2A4129028DE8A6700A6D2E3 /* PhotoConect.app */,
+				E2E3374A28DE904000C09E7C /* AwaFolder.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E2A4129228DE8A6700A6D2E3 /* PhotoConect */ = {
+		E2E3374C28DE904000C09E7C /* AwaFolder */ = {
 			isa = PBXGroup;
 			children = (
-				E2A4129328DE8A6700A6D2E3 /* PhotoConectApp.swift */,
-				E2A4129528DE8A6700A6D2E3 /* ContentView.swift */,
-				E2A4129728DE8A6800A6D2E3 /* Assets.xcassets */,
-				E2A4129928DE8A6800A6D2E3 /* Preview Content */,
+				E2E3374D28DE904000C09E7C /* AwaFolderApp.swift */,
+				E2E3374F28DE904000C09E7C /* ContentView.swift */,
+				E2E3375128DE904100C09E7C /* Assets.xcassets */,
+				E2E3375328DE904100C09E7C /* Preview Content */,
 			);
-			path = PhotoConect;
+			path = AwaFolder;
 			sourceTree = "<group>";
 		};
-		E2A4129928DE8A6800A6D2E3 /* Preview Content */ = {
+		E2E3375328DE904100C09E7C /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				E2A4129A28DE8A6800A6D2E3 /* Preview Assets.xcassets */,
+				E2E3375428DE904100C09E7C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E2A4128F28DE8A6700A6D2E3 /* PhotoConect */ = {
+		E2E3374928DE904000C09E7C /* AwaFolder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2A4129E28DE8A6800A6D2E3 /* Build configuration list for PBXNativeTarget "PhotoConect" */;
+			buildConfigurationList = E2E3375828DE904100C09E7C /* Build configuration list for PBXNativeTarget "AwaFolder" */;
 			buildPhases = (
-				E2A4128C28DE8A6700A6D2E3 /* Sources */,
-				E2A4128D28DE8A6700A6D2E3 /* Frameworks */,
-				E2A4128E28DE8A6700A6D2E3 /* Resources */,
+				E2E3374628DE904000C09E7C /* Sources */,
+				E2E3374728DE904000C09E7C /* Frameworks */,
+				E2E3374828DE904000C09E7C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PhotoConect;
-			productName = PhotoConect;
-			productReference = E2A4129028DE8A6700A6D2E3 /* PhotoConect.app */;
+			name = AwaFolder;
+			productName = AwaFolder;
+			productReference = E2E3374A28DE904000C09E7C /* AwaFolder.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E2A4128828DE8A6700A6D2E3 /* Project object */ = {
+		E2E3374228DE904000C09E7C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					E2A4128F28DE8A6700A6D2E3 = {
+					E2E3374928DE904000C09E7C = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
 			};
-			buildConfigurationList = E2A4128B28DE8A6700A6D2E3 /* Build configuration list for PBXProject "PhotoConect" */;
+			buildConfigurationList = E2E3374528DE904000C09E7C /* Build configuration list for PBXProject "AwaFolder" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = E2A4128728DE8A6700A6D2E3;
-			productRefGroup = E2A4129128DE8A6700A6D2E3 /* Products */;
+			mainGroup = E2E3374128DE904000C09E7C;
+			productRefGroup = E2E3374B28DE904000C09E7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E2A4128F28DE8A6700A6D2E3 /* PhotoConect */,
+				E2E3374928DE904000C09E7C /* AwaFolder */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E2A4128E28DE8A6700A6D2E3 /* Resources */ = {
+		E2E3374828DE904000C09E7C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2A4129B28DE8A6800A6D2E3 /* Preview Assets.xcassets in Resources */,
-				E2A4129828DE8A6800A6D2E3 /* Assets.xcassets in Resources */,
+				E2E3375528DE904100C09E7C /* Preview Assets.xcassets in Resources */,
+				E2E3375228DE904100C09E7C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E2A4128C28DE8A6700A6D2E3 /* Sources */ = {
+		E2E3374628DE904000C09E7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2A4129628DE8A6700A6D2E3 /* ContentView.swift in Sources */,
-				E2A4129428DE8A6700A6D2E3 /* PhotoConectApp.swift in Sources */,
+				E2E3375028DE904000C09E7C /* ContentView.swift in Sources */,
+				E2E3374E28DE904000C09E7C /* AwaFolderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E2A4129C28DE8A6800A6D2E3 /* Debug */ = {
+		E2E3375628DE904100C09E7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		E2A4129D28DE8A6800A6D2E3 /* Release */ = {
+		E2E3375728DE904100C09E7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,14 +259,15 @@
 			};
 			name = Release;
 		};
-		E2A4129F28DE8A6800A6D2E3 /* Debug */ = {
+		E2E3375928DE904100C09E7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PhotoConect/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AwaFolder/Preview Content\"";
+				DEVELOPMENT_TEAM = 9DZWZ2QDGB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -274,12 +275,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tiking.PhotoConect;
+				PRODUCT_BUNDLE_IDENTIFIER = tiking.AwaFolder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -287,14 +289,15 @@
 			};
 			name = Debug;
 		};
-		E2A412A028DE8A6800A6D2E3 /* Release */ = {
+		E2E3375A28DE904100C09E7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PhotoConect/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AwaFolder/Preview Content\"";
+				DEVELOPMENT_TEAM = 9DZWZ2QDGB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -302,12 +305,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tiking.PhotoConect;
+				PRODUCT_BUNDLE_IDENTIFIER = tiking.AwaFolder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,25 +322,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E2A4128B28DE8A6700A6D2E3 /* Build configuration list for PBXProject "PhotoConect" */ = {
+		E2E3374528DE904000C09E7C /* Build configuration list for PBXProject "AwaFolder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2A4129C28DE8A6800A6D2E3 /* Debug */,
-				E2A4129D28DE8A6800A6D2E3 /* Release */,
+				E2E3375628DE904100C09E7C /* Debug */,
+				E2E3375728DE904100C09E7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2A4129E28DE8A6800A6D2E3 /* Build configuration list for PBXNativeTarget "PhotoConect" */ = {
+		E2E3375828DE904100C09E7C /* Build configuration list for PBXNativeTarget "AwaFolder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2A4129F28DE8A6800A6D2E3 /* Debug */,
-				E2A412A028DE8A6800A6D2E3 /* Release */,
+				E2E3375928DE904100C09E7C /* Debug */,
+				E2E3375A28DE904100C09E7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E2A4128828DE8A6700A6D2E3 /* Project object */;
+	rootObject = E2E3374228DE904000C09E7C /* Project object */;
 }
