@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var client = WebSocketClient()
     @State private var isPresented = false
     
     var body: some View {
@@ -31,11 +32,17 @@ struct ContentView: View {
             })
         }
         .padding()
+        .onFirstAppear {
+            client.setup(url: "wss://o2vmciuox2.execute-api.ap-northeast-1.amazonaws.com/production")
+        }
+        .onAppear() {
+            client.connect()
+        }
     }
 }
 
 struct FolderCollectionView: View{
-     private let columns: [GridItem] = Array(repeating: .init(.flexible()),
+    private let columns: [GridItem] = Array(repeating: .init(.flexible()),
                                             count: 2)
     var body: some View {
         LazyVGrid(columns: columns) {

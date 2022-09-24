@@ -14,8 +14,9 @@ struct CameraView: View {
     var body: some View {
         VStack {
             if avFoundationVM.image == nil {
-                ZStack(alignment: .bottom) {
+                VStack {
                     CALayerView(caLayer: avFoundationVM.previewLayer)
+                    Spacer()
                     HStack {
                         Button(action: {
                             self.isActive.toggle()
@@ -25,8 +26,6 @@ struct CameraView: View {
                         .frame(width: 80, height: 80, alignment: .leading)
                         Spacer()
                     }
-                    .padding(.bottom, 100.0)
-                    .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
                     Button(action: {
                         self.avFoundationVM.takePhoto()
                     }) {
