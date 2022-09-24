@@ -21,9 +21,9 @@ class WebSocketClient: NSObject, ObservableObject {
     @Published var messages: [String] = []
     @Published var isConnected: Bool = false
 
-    func setup(url: String) {
+    func setup() {
         let urlSession = URLSession(configuration: .default, delegate: self, delegateQueue: OperationQueue())
-        webSocketTask = urlSession.webSocketTask(with: URL(string: url)!)
+        webSocketTask = urlSession.webSocketTask(with: URL(string: "wss://o2vmciuox2.execute-api.ap-northeast-1.amazonaws.com/production")!)
     }
 
     func connect() {

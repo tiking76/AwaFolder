@@ -12,28 +12,54 @@ struct ContentView: View {
     @State private var isPresented = false
     
     var body: some View {
-        VStack {
-            ScrollView {
-                FolderCollectionView()
+        NavigationView {
+            ZStack {
+                ScrollView {
+                    LazyVGrid(columns: Array(repeating: .init(.flexible()), count: 2)) {
+                        ForEach(SFSymbol.allCases) { symbol in
+                            VStack {
+                                NavigationLink(destination: {
+                                    Color.red
+                                }, label: {
+                                    Image(symbol: symbol)
+                                        .frame(width: 100, height: 100)
+                                        .padding(16)
+                                })
+                                
+                                Text(symbol.rawValue)
+                                    .font(.subheadline)
+                                    .foregroundColor(.black)
+                            }
+                            .padding(8)
+                        }
+                    }
+                }
+                VStack(spacing: 0) {
+                    Spacer()
+                    HStack(spacing: 0) {
+                        Spacer()
+                        Button(action: {
+                            isPresented = true
+                        }, label: {
+                            Image(symbol: .paperplane)
+                                .foregroundColor(.white)
+                                .frame(width: 60, height: 60)
+                                .background(Color.green)
+                                .clipShape(Circle())
+                                .shadow(radius: 5)
+                        })
+                        .fullScreenCover(isPresented: $isPresented, content: {
+                            CameraView(isActive: $isPresented)
+                        })
+                        .padding(.trailing, 16)
+                    }
+                }
             }
-            Button(action: {
-                isPresented = true
-            }, label: {
-                Text("写真を撮る")
-                    .font(.subheadline)
-                    .foregroundColor(.white)
-                    .frame(width: 150, height: 20)
-            })
-            .tint(.green)
-            .buttonStyle(.borderedProminent)
-            .buttonBorderShape(.roundedRectangle(radius: 10))
-            .fullScreenCover(isPresented: $isPresented, content: {
-                CameraView(isActive: $isPresented)
-            })
+            .navigationTitle("Awaフォルダー")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .padding()
         .onFirstAppear {
-            client.setup(url: "wss://o2vmciuox2.execute-api.ap-northeast-1.amazonaws.com/production")
+            client.setup()
         }
         .onAppear() {
             client.connect()
@@ -41,23 +67,3 @@ struct ContentView: View {
     }
 }
 
-struct FolderCollectionView: View{
-    private let columns: [GridItem] = Array(repeating: .init(.flexible()),
-                                            count: 2)
-    var body: some View {
-        LazyVGrid(columns: columns) {
-            ForEach(SFSymbol.allCases) { symbol in
-                VStack {
-                    Image(symbol: symbol)
-                        .frame(width: 100, height: 100)
-                        .padding(16)
-                    
-                    Text(symbol.rawValue)
-                        .font(.subheadline)
-                        .foregroundColor(.black)
-                }
-                .padding(8)
-            }
-        }
-    }
-}

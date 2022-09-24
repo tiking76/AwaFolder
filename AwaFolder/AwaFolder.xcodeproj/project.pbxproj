@@ -42,7 +42,6 @@
 		E2F4288F28DEAAD100267F74 /* AVFoundationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVFoundationVM.swift; sourceTree = "<group>"; };
 		E2F4289128DEAAF000267F74 /* CALayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerView.swift; sourceTree = "<group>"; };
 		E2F4289328DEAB0D00267F74 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
-		E2F4289528DEAC1000267F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E2F4289628DEB8A800267F74 /* WebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,14 +75,13 @@
 		E2E3374C28DE904000C09E7C /* AwaFolder */ = {
 			isa = PBXGroup;
 			children = (
-				E2F4289528DEAC1000267F74 /* Info.plist */,
+				E2F4289828DECED700267F74 /* UseCase */,
 				E2F4288328DEA98700267F74 /* Utilities */,
 				E2F4287A28DEA70F00267F74 /* Extensions */,
 				E2F4287928DEA6FE00267F74 /* Assets */,
 				E2E3374D28DE904000C09E7C /* AwaFolderApp.swift */,
 				E2E3374F28DE904000C09E7C /* ContentView.swift */,
 				E2E3375328DE904100C09E7C /* Preview Content */,
-				E2F4289628DEB8A800267F74 /* WebSocketClient.swift */,
 			);
 			path = AwaFolder;
 			sourceTree = "<group>";
@@ -151,6 +149,14 @@
 				E2F4289328DEAB0D00267F74 /* CameraView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E2F4289828DECED700267F74 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				E2F4289628DEB8A800267F74 /* WebSocketClient.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
