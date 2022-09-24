@@ -7,53 +7,42 @@
 
 import SwiftUI
 
-enum SFSymbol: String, CaseIterable, Identifiable {
+extension Font {
     
-    /// 􀓣
-    case profile = "person.circle"
+    /// 24px, Bold
+    static let h1 = Font.system(size: 24, weight: .semibold)
     
-    /// 􀆄
-    case xmark = "xmark"
+    /// 24px,
+    static let serchText = Font.system(size: 24, weight: .regular)
     
-    /// 􀊴
-    case heart = "heart"
+    /// 22px, Bold
+    static let h2 = Font.system(size: 22, weight: .semibold)
     
-    /// 􀊵
-    case heartFill = "heart.fill"
+    /// 18px, Bold
+    static let h3 = Font.system(size: 18, weight: .semibold)
     
-    /// 􀊫
-    case search = "magnifyingglass"
+    /// 16px, Bold
+    static let h4 = Font.system(size: 16, weight: .semibold)
     
-    /// 􀎞
-    case house
+    /// 16px
+    static let body = Font.system(size: 16)
     
-    /// 􀈎
-    case edit = "square.and.pencil"
+    /// 15px
+    static let subtitle = Font.system(size: 15)
     
-    /// 􀣋
-    case gear = "gearshape"
-    /// ＋
-    case plus = "plus"
+    /// 14px
+    static let body2 = Font.system(size: 14)
     
-    /// 􀈟
-    case paperplane = "paperplane"
+    /// 13px
+    static let subtitle2 = Font.system(size: 13)
     
-    case bookmark = "bookmark"
+    /// 12px
+    static let caption = Font.system(size: 12)
     
-    case bookmarkFill = "bookmark.fill"
-
-    /// 􀈑
-    case trash = "trash"
+    /// 10px
+    static let caption2 = Font.system(size: 10)
     
-    /// 􀈊
-    case pencil = "pencil"
-    
-    var id: String { rawValue }
-    
+    // 15px, Bold
+    static let button = Font.system(size: 15, weight: .semibold)
 }
 
-extension Image {
-    init(symbol: SFSymbol) {
-        self.init(systemName: symbol.rawValue)
-    }
-}

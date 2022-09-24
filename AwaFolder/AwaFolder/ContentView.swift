@@ -27,7 +27,7 @@ struct ContentView: View {
             .buttonStyle(.borderedProminent)
             .buttonBorderShape(.roundedRectangle(radius: 10))
             .fullScreenCover(isPresented: $isPresented, content: {
-                Color.green
+                CameraView(isActive: $isPresented)
             })
         }
         .padding()

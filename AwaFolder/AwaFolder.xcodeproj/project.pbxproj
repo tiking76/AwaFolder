@@ -15,6 +15,13 @@
 		E2F4287E28DEA76900267F74 /* Data+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4287D28DEA76900267F74 /* Data+Image.swift */; };
 		E2F4288028DEA8F900267F74 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4287F28DEA8F900267F74 /* Date.swift */; };
 		E2F4288228DEA91B00267F74 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4288128DEA91B00267F74 /* Font.swift */; };
+		E2F4288528DEA9D900267F74 /* Stateful.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4288428DEA9D900267F74 /* Stateful.swift */; };
+		E2F4288828DEAA0000267F74 /* Hidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4288728DEAA0000267F74 /* Hidden.swift */; };
+		E2F4288A28DEAA1600267F74 /* OnFirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4288928DEAA1600267F74 /* OnFirstAppear.swift */; };
+		E2F4288D28DEAA5100267F74 /* SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4288C28DEAA5100267F74 /* SFSymbol.swift */; };
+		E2F4289028DEAAD100267F74 /* AVFoundationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4288F28DEAAD100267F74 /* AVFoundationVM.swift */; };
+		E2F4289228DEAAF000267F74 /* CALayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4289128DEAAF000267F74 /* CALayerView.swift */; };
+		E2F4289428DEAB0D00267F74 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4289328DEAB0D00267F74 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +34,14 @@
 		E2F4287D28DEA76900267F74 /* Data+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Image.swift"; sourceTree = "<group>"; };
 		E2F4287F28DEA8F900267F74 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		E2F4288128DEA91B00267F74 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		E2F4288428DEA9D900267F74 /* Stateful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stateful.swift; sourceTree = "<group>"; };
+		E2F4288728DEAA0000267F74 /* Hidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hidden.swift; sourceTree = "<group>"; };
+		E2F4288928DEAA1600267F74 /* OnFirstAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnFirstAppear.swift; sourceTree = "<group>"; };
+		E2F4288C28DEAA5100267F74 /* SFSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbol.swift; sourceTree = "<group>"; };
+		E2F4288F28DEAAD100267F74 /* AVFoundationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVFoundationVM.swift; sourceTree = "<group>"; };
+		E2F4289128DEAAF000267F74 /* CALayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerView.swift; sourceTree = "<group>"; };
+		E2F4289328DEAB0D00267F74 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		E2F4289528DEAC1000267F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +74,8 @@
 		E2E3374C28DE904000C09E7C /* AwaFolder */ = {
 			isa = PBXGroup;
 			children = (
+				E2F4289528DEAC1000267F74 /* Info.plist */,
+				E2F4288328DEA98700267F74 /* Utilities */,
 				E2F4287A28DEA70F00267F74 /* Extensions */,
 				E2F4287928DEA6FE00267F74 /* Assets */,
 				E2E3374D28DE904000C09E7C /* AwaFolderApp.swift */,
@@ -93,6 +110,44 @@
 				E2F4288128DEA91B00267F74 /* Font.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2F4288328DEA98700267F74 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E2F4288E28DEAABA00267F74 /* View */,
+				E2F4288B28DEAA3800267F74 /* Modules */,
+				E2F4288628DEA9E600267F74 /* Modifier */,
+				E2F4288428DEA9D900267F74 /* Stateful.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E2F4288628DEA9E600267F74 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				E2F4288728DEAA0000267F74 /* Hidden.swift */,
+				E2F4288928DEAA1600267F74 /* OnFirstAppear.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		E2F4288B28DEAA3800267F74 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E2F4288C28DEAA5100267F74 /* SFSymbol.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E2F4288E28DEAABA00267F74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2F4288F28DEAAD100267F74 /* AVFoundationVM.swift */,
+				E2F4289128DEAAF000267F74 /* CALayerView.swift */,
+				E2F4289328DEAB0D00267F74 /* CameraView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +221,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2E3375028DE904000C09E7C /* ContentView.swift in Sources */,
+				E2F4288528DEA9D900267F74 /* Stateful.swift in Sources */,
+				E2F4289428DEAB0D00267F74 /* CameraView.swift in Sources */,
+				E2F4288D28DEAA5100267F74 /* SFSymbol.swift in Sources */,
 				E2F4288028DEA8F900267F74 /* Date.swift in Sources */,
+				E2F4289228DEAAF000267F74 /* CALayerView.swift in Sources */,
+				E2F4288828DEAA0000267F74 /* Hidden.swift in Sources */,
+				E2F4289028DEAAD100267F74 /* AVFoundationVM.swift in Sources */,
 				E2F4288228DEA91B00267F74 /* Font.swift in Sources */,
 				E2E3374E28DE904000C09E7C /* AwaFolderApp.swift in Sources */,
+				E2F4288A28DEAA1600267F74 /* OnFirstAppear.swift in Sources */,
 				E2F4287C28DEA74900267F74 /* Color.swift in Sources */,
 				E2F4287E28DEA76900267F74 /* Data+Image.swift in Sources */,
 			);
@@ -302,6 +364,9 @@
 				DEVELOPMENT_TEAM = 9DZWZ2QDGB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AwaFolder/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "cameraの許可ください";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "アルバムにアクセスさせてください";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,6 +397,9 @@
 				DEVELOPMENT_TEAM = 9DZWZ2QDGB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AwaFolder/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "cameraの許可ください";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "アルバムにアクセスさせてください";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
