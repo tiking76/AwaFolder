@@ -25,7 +25,6 @@ struct ContentView: View {
                                         .frame(width: 100, height: 100)
                                         .padding(16)
                                 })
-                                
                                 Text(symbol.rawValue)
                                     .font(.subheadline)
                                     .foregroundColor(.black)
@@ -49,7 +48,7 @@ struct ContentView: View {
                                 .shadow(radius: 5)
                         })
                         .fullScreenCover(isPresented: $isPresented, content: {
-                            CameraView(isActive: $isPresented)
+                            PostView()
                         })
                         .padding(.trailing, 16)
                     }

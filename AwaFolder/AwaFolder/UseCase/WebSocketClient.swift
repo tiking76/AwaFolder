@@ -35,10 +35,20 @@ class WebSocketClient: NSObject, ObservableObject {
         webSocketTask?.cancel(with: .goingAway, reason: nil)
     }
 
-    func send(_ message: String) {
-        let msg = URLSessionWebSocketTask.Message.string(message)
-        webSocketTask?.send(msg) { error in
+    func send(message: String) {
+        setup()
+        webSocketTask?.resume()
+        webSocketTask?.send(.string(message)) { error in
             if let error = error {
+                print(error)
+            }
+        }
+    }
+    
+    func send(data: Data) {
+        webSocketTask?.send(.data(data)) { error in
+            if let error = error {
+                print("落ちた")
                 print(error)
             }
         }

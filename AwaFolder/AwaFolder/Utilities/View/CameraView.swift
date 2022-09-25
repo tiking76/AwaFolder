@@ -24,17 +24,17 @@ struct CameraView: View {
                             Text("キャンセル")
                         }
                         .frame(width: 80, height: 80, alignment: .leading)
-                        Spacer()
+                        Button(action: {
+                            self.avFoundationVM.takePhoto()
+                        }) {
+                            Image(systemName: "camera.circle.fill")
+                                .renderingMode(.original)
+                                .resizable()
+                                .frame(width: 80, height: 80, alignment: .center)
+                        }
                     }
-                    Button(action: {
-                        self.avFoundationVM.takePhoto()
-                    }) {
-                        Image(systemName: "camera.circle.fill")
-                            .renderingMode(.original)
-                            .resizable()
-                            .frame(width: 80, height: 80, alignment: .center)
-                    }
-                    .padding(.bottom, 100.0)
+                    .padding(100)
+                    .background(Color.black)
                 }.onAppear {
                     self.avFoundationVM.startSession()
                 }.onDisappear {
