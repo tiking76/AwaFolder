@@ -17,60 +17,60 @@ struct PostView: View {
     @State private var text = ""
     @State private var postData = PostData(action: "sendphoto", base_64_image: "test", folder_name: "test")
     @State private var imageText = ""
+    @State var circleCenter = CGPoint.zero
+    @State private var isPresented = false
     
     var body: some View {
         NavigationView{
-            VStack(spacing:0){
-                ZStack{
-                    NavigationLink(
-                        destination: Imagepicker(show: $isImagePicker, image: $imageData, text: $imageText, sourceType: source),
-                        isActive:$isImagePicker,
-                        label: {
-                            Text("")
-                        })
-                    VStack(spacing: 16){
-                        if imageData.count != 0{
-                            Image(uiImage: UIImage(data: self.imageData)!)
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(height: 250)
-                                .cornerRadius(15)
-                                .padding()
-                        }
-                        HStack(spacing:30){
-                            Button(action: {
-                                self.source = .photoLibrary
-                                self.isImagePicker.toggle()
-                            }, label: {
-                                Text("Upload")
+            GeometryReader { geometory in
+                VStack(spacing:0){
+                    ZStack{
+                        NavigationLink(
+                            destination: Imagepicker(show: $isImagePicker, image: $imageData, text: $imageText, sourceType: source),
+                            isActive:$isImagePicker,
+                            label: {
+                                Text("")
                             })
-                            Button(action: {
-                                self.source = .camera
-                                self.isImagePicker.toggle()
-                            }, label: {
-                                Text("Take Photo")
-                            })
-                        }
-                        TextField("写真のグループ", text: $text)
-                            .textFieldStyle(.roundedBorder)
-                            .padding(.horizontal, 32)
-                        
-                        Button(action: {
-                            postData.base_64_image = imageText
-                            print(imageData)
-                            //print(imageText)
-                            postData.folder_name = "ishinomakihackathon2022-awa-folder"
-                            guard let jsonValue = try? JSONEncoder().encode(postData) else {
-                                fatalError("Failed to encode to JSON.")
+                        VStack(spacing: 16){
+                            if imageData.count != 0{
+                                Image(uiImage: UIImage(data: self.imageData)!)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(height: 250)
+                                    .cornerRadius(15)
+                                    .padding()
                             }
-                            //print(String(bytes: jsonValue, encoding: .utf8)!)
-                            socketClient.send(message: String(data: jsonValue, encoding: .utf8)!)
-                        }, label: {
-                            Text("投稿")
-                        })
-                        .tint(.black)
-                        .buttonStyle(.borderedProminent)
-                        //.disabled(text.isEmpty || !socketClient.isConnected)
+                            HStack(spacing:30){
+                                Button(action: {
+                                    self.source = .photoLibrary
+                                    self.isImagePicker.toggle()
+                                }, label: {
+                                    Text("Upload")
+                                })
+                                Button(action: {
+                                    self.source = .camera
+                                    self.isImagePicker.toggle()
+                                }, label: {
+                                    Text("Take Photo")
+                                })
+                            }
+                            TextField("写真のグループ", text: $text)
+                                .textFieldStyle(.roundedBorder)
+                                .padding(.horizontal, 32)
+                            
+                            Image("Awa")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                                .offset(x: circleCenter.x - 25, y: circleCenter.y - 25)
+                                .gesture(
+                                                    DragGesture(minimumDistance: 0).onChanged { value in
+                                                        circleCenter = value.location
+                                                        if geometory.size.height / 3 > circleCenter.y {
+                                                            
+                                                        }
+                                                    }
+                                                )
+                        }
                     }
                 }
             }

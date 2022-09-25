@@ -23,7 +23,7 @@ class WebSocketClient: NSObject, ObservableObject {
 
     func setup() {
         let urlSession = URLSession(configuration: .default, delegate: self, delegateQueue: OperationQueue())
-        webSocketTask = urlSession.webSocketTask(with: URL(string: "wss://o2vmciuox2.execute-api.ap-northeast-1.amazonaws.com/production")!)
+        webSocketTask = urlSession.webSocketTask(with: URL(string: "wss://o2vmciuox2.execute-api.ap-northeast-1.amazonaws.com/production/ishinomakihackathon2022-awa-folder")!)
     }
 
     func connect() {

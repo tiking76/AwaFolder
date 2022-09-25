@@ -16,16 +16,16 @@ struct ContentView: View {
             ZStack {
                 ScrollView {
                     LazyVGrid(columns: Array(repeating: .init(.flexible()), count: 2)) {
-                        ForEach(SFSymbol.allCases) { symbol in
+                        ForEach(client.messages, id: \.self) { message in
                             VStack {
                                 NavigationLink(destination: {
                                     Color.red
                                 }, label: {
-                                    Image(symbol: symbol)
+                                    Image(symbol: .paperplane)
                                         .frame(width: 100, height: 100)
                                         .padding(16)
                                 })
-                                Text(symbol.rawValue)
+                                Text(message)
                                     .font(.subheadline)
                                     .foregroundColor(.black)
                             }
